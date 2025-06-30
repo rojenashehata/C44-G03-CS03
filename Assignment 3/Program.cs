@@ -43,12 +43,12 @@ namespace Assignment_3
             ///
 
             //string name = "ali";
-            ////int c=int.Parse(name);//system format exception
-            ////int c = Convert.ToInt32(name);
-            ////Console.Write(c);//system format exception
-            ////int c=(int)name; //compile time error
-            //int.TryParse(name, out int c);
-            //Console.Write(c);//print default value for null which is zero for value type variables
+            //int c = int.Parse(name);//system format exception
+            //int e = Convert.ToInt32(name);
+            //Console.Write(c);//system format exception
+            //int d = (int)name; //compile time error
+            //int.TryParse(name, out int f);
+            //Console.Write(f);//print default value for null which is zero for value type variables
             #endregion
 
 
@@ -61,7 +61,7 @@ namespace Assignment_3
 
 
 
-            ////expected for 3 arithmetic operayions(+,*,/)
+            ////expected for 3 arithmetic operations(+,*,/) between values 1.4&1.2
             ////+ 2.6
             ////* 1.68
             //// '/' 1.1666666666666666666666666667
@@ -105,8 +105,8 @@ namespace Assignment_3
             //given string.
 
             //string address = "Cairo, Egypt";
-            //Console.WriteLine("You r from "+address.Substring(0,5));
-            //Console.WriteLine("You r from " + address.Split(",")[0]);
+            //Console.WriteLine("You'r from "+address.Substring(0,5));
+            //Console.WriteLine("You'r from " + address.Split(",")[0]);
 
             #endregion
 
@@ -125,7 +125,7 @@ namespace Assignment_3
 
             //when we are modifying a value of value type variable
             //, the another variable which assigned to same variable isn't affected at all
-            // because we change value not reference
+            // because we change value 
             // Both are stored their values in the stack
 
 
@@ -144,14 +144,14 @@ namespace Assignment_3
             //c2.x = 4;
             //Console.WriteLine($"object1.x => {c1.x}, object2.x => {c2.x}");
 
-            //when Assigning one reference type variable to another,
-            //we will see that any change at any one of two variables will be reflected to the other 
+            //when Assigning one reference type variable to another like c2 = c1,
+            //we will see that any change at any one of Both variables will be reflected to the other 
             //Both are equal in value in stack which refrence  to the same object in heap
 
             //in details:⬇⬇⬇⬇⬇⬇
-            //Because of reference type variables stored in heap and store refrence of this object into stack
-            //So when we put object1=object2, reference value of object 2 will change to reference value of object1
-            //As a result, both references point to the same object in the heap.
+            //Because of reference type variables stored in heap and stored refrence of this object into stack
+            //So when we put object1=object2
+            //, both references point to the same object in the heap.
 
 
             #endregion
@@ -165,7 +165,7 @@ namespace Assignment_3
             //Console.WriteLine("Enter your first name:");
 
             //string? lastName=Console.ReadLine();
-            //Console.WriteLine($"Hi,{firstName} {lastName}");
+            //Console.WriteLine($"Hi! {firstName} {lastName}");
 
 
 
@@ -177,7 +177,7 @@ namespace Assignment_3
             //time.The formula for simple interest is
             //Interest = (principal * rate * time) / 100.
 
-            //double interest, principalAmount, interestRate,time;
+            //double interest, principalAmount, interestRate, time;
             //Console.WriteLine("Hi, to calculate the simple interest. \nFirst, Enter principal value amount:");
             //double.TryParse(Console.ReadLine(), out principalAmount);
             //Console.WriteLine("Enter rate of interest value");
@@ -185,7 +185,7 @@ namespace Assignment_3
             //Console.WriteLine("Enter time value");
             //double.TryParse(Console.ReadLine(), out time);
             //interest = (principalAmount * interestRate * time) / 100;
-            //Console.WriteLine("Interest value = {0} ",interest);
+            //Console.WriteLine("Interest value = {0} ", interest);
 
 
             #endregion
