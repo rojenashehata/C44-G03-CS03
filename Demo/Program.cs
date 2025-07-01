@@ -152,17 +152,18 @@ namespace Demo
 
             #region part08 String formating
             //equation 10+5=15
-            int x = 10, y = 5, result;
-            result = x + y;
-            string message;
+            //int x = 10, y = 5, result;
+            //result = x + y;
+            //string message;
 
             #region string Concatenation
             //message = "equation: " + x + " + " + y + " = " + result;
             //Console.WriteLine(message);
             #endregion
+
             #region compositeFormatting
 
-            Console.WriteLine("equation: {0} +{1}={2}", x, y, result);
+            //Console.WriteLine("equation: {0} +{1}={2}", x, y, result);
 
             #endregion
 
@@ -177,13 +178,134 @@ namespace Demo
             #endregion
 
             #region String Interpolation
-             message=$"equation: {x}+{y}={result}";
-            Console.WriteLine(message);
+            // message=$"equation: {x}+{y}={result}";
+            //Console.WriteLine(message);
 
 
             #endregion
 
+            //message = "F:\\Course--\\C#\\Session03";
+            //message = @"F:\Course--\C#\Session03";
+            //Console.WriteLine(message);
+
             #endregion
+
+
+            #region Part09 Conditional statments EX01
+
+            #region IfCondition
+            ////for memory, If conditition is better tahn switch and is better also in conditions
+
+            //Console.WriteLine("Please, Enter a month existed in 1st quarter");
+            //int.TryParse(Console.ReadLine(), out int value);
+            //if (value == 1) //O(n)
+            //    Console.WriteLine("Hello january");
+            //else if (value == 2)
+            //    Console.WriteLine("Hello february");
+
+            //else if (value == 3)
+            //    Console.WriteLine("Hello March");
+            //else
+            //    Console.WriteLine("Invalid month number");
+            #endregion
+
+            #region Switch
+            ////jump table  O(1)
+            //switch(value)
+            //{
+            //    case 1:
+            //        Console.WriteLine("Hello january");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("Hello february");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("Hello March");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Invalid month number");
+            //        break;
+
+
+            //}
+            #endregion
+
+            #endregion
+
+            #region Part10 Conditional statments EX02
+            //Age is greater than 22=> student age is greater than 22
+            //Age is less than 22=>student age is less than 22
+            //age is 22=>student age is 22
+
+
+            //Console.WriteLine("Enter student age");
+            //int.TryParse(Console.ReadLine(), out var value);
+
+            #region IF
+            //if (value > 22)
+            //    Console.WriteLine("student age is greater than 22");
+            //else if (value < 22)
+            //    Console.WriteLine("student age is less than 22");
+            //else
+            //    Console.WriteLine("student age is 22");
+
+            #endregion
+
+
+            ////in cases like this if conditions is beeter
+            #region switch
+
+            //switch(value)//jumb table will not be created 
+            //{
+            //    case >22:
+            //        Console.WriteLine("student age is greater than 22");
+            //        break;
+            //    case < 22:
+            //        Console.WriteLine("student age is less than 22");
+            //        break;
+            //    default:
+            //        Console.WriteLine("student age is 22");
+            //        break ;
+
+            //}
+            #endregion
+
+
+
+            #endregion
+
+
+
+            #region Part11  EX03Goto
+            //Console.WriteLine("Enter your budget:");
+            //int.TryParse(Console.ReadLine(), out var value);
+
+            //switch (value) 
+            //{
+            //    case 1000:
+            //        Console.WriteLine("Option 01");
+            //        break;
+            //    case 2000:
+            //        Console.WriteLine("Option 02");
+            //        goto case 1000;
+            //        //Console.WriteLine();//unreachable code
+
+            //    case 3000:
+            //        Console.WriteLine("Option 02");
+            //        goto case 2000;
+
+            // }
+
+
+            retry:
+            //Console.WriteLine("please enter your name:");
+            //string? name=Console.ReadLine();
+            //if (name == "Ahmed")
+            //    goto retry;
+            //else
+            //    Console.WriteLine("Hi! Ahmed");
+            #endregion
+
         }
     }
 }
